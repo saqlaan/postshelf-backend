@@ -14,6 +14,9 @@ function extractJsonFromCodeBlock(text) {
 }
 
 
+app.get("/ping", (req, res) => {
+  res.send("pong");
+});
 
 app.post("/api/extract", async (req, res) => {
   const { letterContent } = req.body;
